@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black justify-content-end align-items-center">
+        <button class="navbar-toggler mr-auto" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="container">
+            <div class="collapse navbar-collapse justify-content-center justify-content-lg-end" id="menu">
+                <ul class="navbar-nav d-flex flex-column flex-lg-row align-items-center">
+                    <li class="nav-item"><a class="nav-link btn btn-outline-secondary border-0 mx-2" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-outline-secondary border-0 mx-2" href="portafolio.html">Portafolio</a></li>
+                    <li class="nav-item btn btn-outline-secondary border-0 mx-2"><a class="nav-link" href="sobre-mi.html">Sobre mí</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-outline-secondary border-0 mx-2" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5 flex-fill">
+        <section class="row justify-content-center align-items-center rounded-4 bg-light shadow-sm">
+            <section class="col-12 col-lg-6 h-100 text-center px-5">
+                <h2>¿Tienes una idea o proyecto en mente?</h2>
+                <p>
+                    Estoy listo para ayudarte a convertirla en una solución funcional y moderna.
+                    Ya sea un sitio web, aplicación o sistema, trabajemos juntos para hacerlo realidad.
+                </p>
+            </section>
+            <section class="col-12 col-lg-6 py-2 bg-white py-4 justify-content-center rounded-4">
+                <h4 class="text-center">Envíame un mensaje</h4>
+                <form class="row justify-content-center mb-2 w-auto needs-validation" novalidate>
+                    <div class="mb-3 col-12 col-lg-8">
+                        <label class="form-label w-100 has-validation">
+                            <span>Nombre</span>
+                            <input type="text" class="form-control" placeholder="Ingrese su nombre" required>
+                            <div class="invalid-feedback">
+                                El nombre es requerido
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="mb-3 col-12 col-lg-8">
+                        <label class="form-label w-100 has-validation">
+                            <span>Apellido</span>
+                            <input type="text" class="form-control" placeholder="Ingrese su apellido" required>
+                            <div class="invalid-feedback">
+                                El apellido es requerido
+                            </div>
+                        </label>
+                    </div>
+                    <div class="mb-3 col-12 col-lg-8">
+                        <label class="form-label w-100 has-validation">
+                            <span>Correo</span>
+                            <input type="email" class="form-control" placeholder="Ingrese su correo" required>
+                            <div class="invalid-feedback">
+                                El correo es requerido
+                            </div>
+                        </label>
+                    </div>
+                    <div class="mb-3 col-12 col-lg-8">
+                        <label class="form-label w-100">
+                            <span>Mensaje</span>
+                            <textarea class="form-control" placeholder="Ingrese su mensaje"></textarea>
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary col-12 col-lg-8 w-75">
+                        <span>Enviar</span>
+                        <i class="bi bi-send"></i>
+                    </button>
+                </form>
+            </section>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white">
+        <div class="container px-4 pt-4">
+            <div class="row justify-content-evenly">
+                <section class="col-12 col-lg-6 mx-auto mb-2 d-flex flex-column justify-content-center align-items-center">
+                    <h3>Ana Fernández</h3>
+                    <p>Desarrolladora de Software</p>
+                    <div class="input-group mb-3 d-flex justify-content-center">
+                        <input type="text" value="email@mail.com" class="bg-white w-auto pl-2 input-group-text" disabled>
+                        <button class="btn btn-outline-secondary text-white" type="button"><i class="bi bi-clipboard"></i></button>
+                    </div>
+                </section>
+                <section class="col-12 d-flex flex-column justify-content-center align-items-center col-sm-6 mx-auto">
+                    <p>Redes sociales</p>
+                    <ul class="list-unstyled d-flex justify-content-between align-items-center w-50">
+                        <li>
+                            <a href="#" class="text-white"><i class="bi bi-whatsapp"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-white"><i class="bi bi-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-white"><i class="bi bi-github"></i></a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+            <p class="text-center">Todos los derechos reservados &copy;</p>
+        </div>
+    </footer>
+    <script src="./js/validationsContactForm.js"></script>
+</body>
+</html>
