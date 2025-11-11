@@ -12,47 +12,61 @@
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-black">
-        <div class="container p-2">
+        <div class="container-fluid px-5 py-2">
             <button class="navbar-toggler justify-content-end" type="button" data-bs-toggle="collapse"
                 data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-center justify-content-lg-center" id="menu">
-                <ul class="navbar-nav  d-flex flex-column flex-lg-row align-items-center">
-                    <li class="nav-item"><a class="nav-link btn btn-outline-secondary border-0 mx-2"
-                            href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link btn btn-outline-secondary border-0 mx-2"
-                            href="portafolio.html">Portafolio</a></li>
-                    <li class="nav-item btn btn-outline-secondary border-0 mx-2"><a class="nav-link"
-                            href="sobre-mi.html">Sobre mí</a></li>
-                    <li class="nav-item"><a class="nav-link btn btn-outline-secondary border-0 mx-2"
-                            href="contacto.html">Contacto</a></li>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav w-100 d-flex flex-column flex-lg-row align-items-center justify-content-between">
+                    <li class="nav-item">
+                        <span class="navbar-brand text-white">TechBuild</span>
+                    </li>
+                    <div class="d-flex flex-column flex-lg-row">
+                        <li class="nav-item"><a class="nav-link btn btn-outline-secondary border-0 mx-2"
+                                href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link btn btn-outline-secondary border-0 mx-2"
+                                href="portafolio.html">Portafolio</a></li>
+                        <li class="nav-item"><a class="nav-link btn btn-outline-secondary border-0 mx-2"
+                                href="sobre-mi.html">Sobre mí</a></li>
+                        <li class="nav-item"><a class="nav-link btn btn-outline-secondary border-0 mx-2"
+                                href="contacto.html">Contacto</a></li>
+                    </div>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <header class="bg-black min-vh-100 text-center py-5">
-        <div class="container">
+    <header class="min-vh-75 d-flex align-items-center bg-light p-1">
+        <div class="container-fluid px-3 px-md-5 py-4">
             <div class="row align-items-center">
-                <div class="col-md-6 text-light p-2">
-                    <h1 class="display-4">¡Hola! Soy Ana Fernández</h1>
-                    <p class="lead text-start">Desarrolladora de software especializada en crear soluciones prácticas y
-                        funcionales.
-                        Me enfoco en construir proyectos limpios, eficientes y con una buena experiencia de usuario.</p>
+                <div class="col-12 col-lg-6 px-5 px-md-6 py-md-5 py-5">
 
+                    <h1 class="display-3 display-md-5 fw-bold mb-4">Tu próximo gran proyecto digital nace con TechBuild
+                    </h1>
+
+                    <p class="lead mb-4 fs-4 fs-md-2">Nuestro equipo está listo para codificar tu éxito. Cuéntanos qué
+                        quieres
+                        construir.</p>
+
+                    <a href="contacto.html" class="btn btn-info btn-lg rounded-pill px-4 text-light">
+                        Contáctanos
+                    </a>
                 </div>
-                <div class="col-md-6">
-                    <img src="/Img/portadaHome.png" alt="" class="w-75 h-75 shadow-lg">
+
+                <div class="col-12 col-lg-6">
+                    <img src="/img/portadaHome.jpg" alt="TechBuild Portfolio" class="img-fluid rounded-4 shadow-lg">
                 </div>
+
+
             </div>
         </div>
     </header>
 
     <section class="container my-5 py-4">
         <h2 class="text-center mb-4">Servicios</h2>
-        <div class="row g-9">
-            <div class="col-md-4">
+        <div class="row g-4">
+            <div class="col-12 col-md-6 col-lg-4">
                 <div class="card bg-light border-0 h-100 shadow-sm">
                     <div class="card-body text-center d-flex flex-column p-5">
                         <div class="mb-3">
@@ -61,16 +75,12 @@
                                 <i class="bi bi-globe2 fs-3" aria-hidden="true"></i>
                             </div>
                         </div>
-
                         <h5 class="card-title">Desarrollo Web</h5>
                         <p class="card-text text-muted">Sitios responsivos y accesibles con HTML, CSS y JavaScript.</p>
-
                         <div class="d-flex justify-content-center gap-2 my-2">
                             <span class="badge bg-white text-dark border">HTML</span>
                             <span class="badge bg-white text-dark border">CSS</span>
-                            <span class="badge bg-white text-dark border">JS</span>
                         </div>
-
                         <div class="d-flex justify-content-center mt-auto">
                             <a href="portafolio.html" class="btn btn-outline-secondary btn-sm px-3 rounded-pill">
                                 Ver proyectos
@@ -80,8 +90,8 @@
                 </div>
             </div>
 
-            <div class="col-md-4">
-                <div class="card bg-light border-0 h-100 shadow-sm ">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card bg-light border-0 h-100 shadow-sm">
                     <div class="card-body text-center d-flex flex-column p-5">
                         <div class="mb-3">
                             <div class="rounded-circle bg-secondary text-white d-inline-flex align-items-center justify-content-center"
@@ -89,16 +99,13 @@
                                 <i class="bi bi-palette fs-3" aria-hidden="true"></i>
                             </div>
                         </div>
-
                         <h5 class="card-title">Diseño UI/UX</h5>
                         <p class="card-text text-muted">Prototipos y diseños centrados en la experiencia del usuario
                             (Figma, wireframes)</p>
-
                         <div class="d-flex justify-content-center gap-2 my-2">
                             <span class="badge bg-white text-dark border">Figma</span>
                             <span class="badge bg-white text-dark border">Prototipos</span>
                         </div>
-
                         <div class="d-flex justify-content-center mt-auto">
                             <a href="portafolio.html" class="btn btn-outline-secondary btn-sm px-3 rounded-pill">
                                 Ver proyectos
@@ -108,7 +115,7 @@
                 </div>
             </div>
 
-            <div class="col-md-4">
+            <div class="col-12 col-md-6 col-lg-4">
                 <div class="card bg-light border-0 h-100 shadow-sm">
                     <div class="card-body text-center d-flex flex-column p-5">
                         <div class="mb-3">
@@ -117,16 +124,13 @@
                                 <i class="bi bi-phone fs-3" aria-hidden="true"></i>
                             </div>
                         </div>
-
                         <h5 class="card-title">Apps Móviles</h5>
                         <p class="card-text text-muted">Desarrollo de aplicaciones híbridas y responsivas para Android /
                             iOS</p>
-
                         <div class="d-flex justify-content-center gap-2 my-2">
                             <span class="badge bg-white text-dark border">Ionic</span>
                             <span class="badge bg-white text-dark border">React Native</span>
                         </div>
-
                         <div class="d-flex justify-content-center mt-auto">
                             <a href="portafolio.html" class="btn btn-outline-secondary btn-sm px-3 rounded-pill">
                                 Ver proyectos
