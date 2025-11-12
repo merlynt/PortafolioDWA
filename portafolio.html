@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio | TechBuild</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="../CSS/style.css">
+
+</head>
+
+<body class="bg-light">
+
+<!-- ✅ NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-black">
+    <div class="container-fluid px-5 py-2">
+        <a class="navbar-brand text-white fw-bold" href="#">TechBuild</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav nav-underline ms-auto d-flex flex-column flex-lg-row align-items-center">
+                <li class="nav-item">
+                    <a class="nav-link text-white mx-2" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active text-white mx-2" href="portafolio.html">Portafolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white mx-2" href="sobre-mi.html">Sobre mí</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white mx-2" href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- ✅ SECCIÓN PORTAFOLIO -->
+<section class="container py-5">
+    <div class="text-center mb-5">
+        <h2 class="display-5 fw-bold mb-3" data-aos="fade-up">Proyectos Destacados</h2>
+        <p class="text-muted fs-5" data-aos="fade-up" data-aos-delay="200">
+            Algunos de los proyectos que reflejan nuestra experiencia en desarrollo web, móvil y diseño.
+        </p>
+    </div>
+
+    <div class="row g-4">
+        <!-- CARD 1 -->
+        <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="card h-100 shadow-sm border-0">
+                <img src="img/proyectos/LearnHub.png" class="card-img-top" alt="Vista de la plataforma LearnHub">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-semibold">Plataforma Educativa LearnHub</h5>
+                    <p class="card-text text-muted">
+                        Portal educativo moderno y responsivo para gestionar cursos, inscripciones y progreso estudiantil, con diseño limpio y experiencia centrada en el usuario.
+                    </p>
+                    <button class="btn btn-outline-dark rounded-pill btn-sm" data-bs-toggle="modal"
+                            data-bs-target="#modalLearnHub">
+                        Ver Detalles
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="card h-100 shadow-sm border-0">
+                <img src="img/proyectos/Startup.png" class="card-img-top" alt="Vista de la plataforma Connectiva">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-semibold">Startup Connectiva</h5>
+                    <p class="card-text text-muted">
+                        Plataforma educativa moderna y responsiva para gestionar cursos e inscripciones, con animaciones, secciones limpias y un enfoque en conversión y experiencia de usuario.
+                    </p>
+                    <button class="btn btn-outline-dark rounded-pill btn-sm" data-bs-toggle="modal"
+                            data-bs-target="#modalStartup">
+                        Ver Detalles
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="card h-100 shadow-sm border-0">
+                <img src="img/proyectos/farm_system.png" class="card-img-top" alt="Vista del Sistema Farmacéutico">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-semibold">Sistema de Gestión Farmacéutica</h5>
+                    <p class="card-text text-muted">
+                        Plataforma web para farmacias que permite gestionar inventario, ventas y control de lotes, con interfaz moderna, flujo de trabajo optimizado y enfoque en la experiencia del usuario.
+                    </p>
+                    <button class="btn btn-outline-dark rounded-pill btn-sm" data-bs-toggle="modal"
+                            data-bs-target="#modalFarmacia">
+                        Ver Detalles
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- MODAL LearnHub -->
+<div class="modal fade" id="modalLearnHub" tabindex="-1" aria-labelledby="modalLearnHubLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-0 shadow">
+            <div class="modal-header bg-dark text-white">
+                <h5 class="modal-title" id="modalLearnHubLabel">
+                    <i class="bi bi-mortarboard me-2"></i> LearnHub - Plataforma Educativa
+                </h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <p>LearnHub es un portal educativo moderno y responsivo, desarrollado con <strong>Vue.js</strong> y <strong>Node.js</strong>. Permite gestionar cursos, inscripciones y seguimiento del progreso estudiantil, ofreciendo una experiencia de usuario centrada y fluida.</p>
+                <img src="img/proyectos/LearnHub.png" class="img-fluid rounded-3 shadow-sm" alt="Vista de la plataforma LearnHub">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- MODAL Startup -->
+<div class="modal fade" id="modalStartup" tabindex="-1" aria-labelledby="modalStartupHubLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-0 shadow">
+            <div class="modal-header bg-dark text-white">
+                <h5 class="modal-title" id="modalStartupLabel">
+                    <i class="bi bi-laptop me-2"></i> Startup Connectiva
+                </h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <p>Startup Connectiva es un diseño de landing page moderno y responsivo, desarrollado con <strong>Vue.js</strong> y <strong>Node.js</strong>. Destaca por su diseño limpio, animaciones atractivas y estructura optimizada para conversión y experiencia de usuario.</p>
+                <img src="img/proyectos/Startup.png" class="img-fluid rounded-3 shadow-sm" alt="Landing Page de Startup Connectiva">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- MODAL Sistema Farmacéutico -->
+<div class="modal fade" id="modalFarmacia" tabindex="-1" aria-labelledby="modalFarmaciaLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-0 shadow">
+            <div class="modal-header bg-dark text-white">
+                <h5 class="modal-title" id="modalFarmaciaLabel">
+                    <i class="bi bi-box-seam me-2"></i> Sistema de Gestión Farmacéutica
+                </h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <p>Plataforma web desarrollada para farmacias, diseñada para gestionar inventario, ventas y control de lotes de manera eficiente. Desarrollada con <strong>Vue.js</strong> y <strong>Node.js</strong>, cuenta con una interfaz moderna, flujo de trabajo optimizado y funcionalidades orientadas a la experiencia del usuario.</p>
+                <img src="img/proyectos/farm_system.png" class="img-fluid rounded-3 shadow-sm" alt="Vista del Sistema Farmacéutico">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ✅ FOOTER -->
+<footer class="bg-black text-white p-3 mt-5">
+    <div class="container px-4 pt-4">
+        <div class="row justify-content-evenly">
+            <section
+                    class="col-12 col-lg-6 mx-auto mb-2 d-flex flex-column justify-content-center align-items-center">
+                <h3>TechBuild</h3>
+                <div class="input-group mb-3 d-flex justify-content-center">
+                    <input type="text" value="email@mail.com" class="bg-white w-auto pl-2 input-group-text" disabled>
+                    <button class="btn btn-outline-secondary text-white" type="button"><i
+                            class="bi bi-clipboard"></i></button>
+                </div>
+            </section>
+            <section class="col-12 d-flex flex-column justify-content-center align-items-center col-sm-6 mx-auto">
+                <p>Redes sociales</p>
+                <ul class="list-unstyled d-flex justify-content-between align-items-center w-50">
+                    <li><a href="#" class="text-white"><i class="bi bi-whatsapp"></i></a></li>
+                    <li><a href="#" class="text-white"><i class="bi bi-facebook"></i></a></li>
+                    <li><a href="#" class="text-white"><i class="bi bi-linkedin"></i></a></li>
+                    <li><a href="#" class="text-white"><i class="bi bi-github"></i></a></li>
+                </ul>
+            </section>
+        </div>
+        <p class="text-center">Todos los derechos reservados &copy; 2025</p>
+    </div>
+</footer>
+
+<!-- ✅ SCRIPTS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+</body>
+
+</html>
