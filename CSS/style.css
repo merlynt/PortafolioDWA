@@ -4,8 +4,9 @@
 }
 
 .cliente-img {
-    width: 100%;
-    height: 100px; /* altura fija para todas */
-    object-fit: contain; /* mantiene la proporción sin deformar */
+    width: 110%;
+    height: 110px;
+    object-fit: contain;
 }
+
 
