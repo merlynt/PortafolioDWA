@@ -1,7 +1,6 @@
 const counters = document.querySelectorAll('.counter-number');
 const duration = 6000; 
-const stepTime = 10;   
-console.log(counters)
+const stepTime = 10;
 
 counters.forEach(counter => {
     let currentNumber = 0;
